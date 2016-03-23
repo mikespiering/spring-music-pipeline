@@ -1,13 +1,15 @@
 ---
-resources:
+ resources:
   - name: Github-Repo
     type: git
     source:
       uri: https://github.com/mikespiering/spring-music
-jobs:
+
+ jobs:
   - name: spring-music-pipeline
     serial: true
     public: true
+
     plan:
-     - get: Github-Repo
-     - trigger: true
+      - get: Github-Repo
+        trigger: true
