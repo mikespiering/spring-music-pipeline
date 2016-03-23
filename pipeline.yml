@@ -1,0 +1,6 @@
+---
+resources:
+  -name: GitHub-Repo
+    type: git
+    source:
+      uri: https://github.com/nsagoo-pivotal/spring-music
